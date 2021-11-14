@@ -10,65 +10,78 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <style>            
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
         body {
             margin: 0px;
             padding: 0px;
-            box-sizing: border-box;     
-            font-family:  cursive, Arial, Helvetica;        
-            transition: all 1s ease;            
-        }  
+            box-sizing: border-box;
+            font-family: cursive, Arial, Helvetica;
+            transition: all 1s ease;
+        }
+
         .chutrang {
             color: #fff;
         }
+
         .bg-dark {
-            background-color: rgba(0, 0, 0, 0.7);                 
-        }      
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
         .title {
             position: fixed;
-            top: 0px;            
+            top: 0px;
             z-index: 999;
-            display: flex;    
+            display: flex;
             justify-content: center;
             width: 100%;
         }
-        .title div{                                              
+
+        .title div {
             cursor: pointer;
             margin: 0px 10px;
-            padding: 0px 100px;                        
-            background-color: rgba(0, 0, 0, 0.3);  
-            transition: .5s ease;                      
+            padding: 0px 100px;
+            background-color: rgba(0, 0, 0, 0.3);
+            transition: .5s ease;
         }
+
         .btn-darkmode {
             position: relative;
             border-radius: 50%;
             width: 40px;
-            height: 40px;                         
+            height: 40px;
             padding: 0px !important;
-        }   
-        .btn-darkmode .sang {            
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);            
-            position: absolute;
-            font-size: 25px;
-            color: orange;            
-        }     
-        .btn-darkmode .toi {            
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);      
-            font-size: 25px;
-            color: #000;            
+            cursor: pointer;
         }
+
+        .btn-darkmode .sang {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            font-size: 25px;
+            color: orange;
+        }
+
+        .btn-darkmode .toi {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+            color: #000;
+        }
+        .formen,
+        .forgirl {
+            cursor: pointer;
+        }        
         .title .formen:hover {
-            background-color: rgba(0, 0, 0, 0.8);  
+            background-color: rgba(0, 0, 0, 0.8);            
         }
-        .title .forgirl:hover {
-            background-color: pink;
+        .forgirl:hover {
+            color: rgb(255, 151, 168) !important; 
         }
+
         img {
             width: 100%;
             height: 100%;
@@ -88,26 +101,50 @@
         }
 
         .display-block {
-            display: block;            
+            display: block;
         }
+
         .display-none {
-            display: none;            
+            display: none;
         }
+
         .container {
             transition: all 1s ease;
-        }                
+        }
     </style>
 </head>
 
 <body>
-    <div class="text-center py-3 text-danger title">
+    <!-- <div class="text-center py-3 text-danger title">
         <div class="formen"><h4>For men</h4></div>
         <div class="forgirl"><h4>For girl</h4></div>
         <div class="btn-darkmode">
             <i class="fas fa-sun sang display-none"></i>
             <i class="fas fa-moon toi"></i>
         </div>
-    </div>
+    </div> -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>    
+          <div class="btn-darkmode">
+            <i class="fas fa-sun sang display-none"></i>
+            <i class="fas fa-moon toi"></i>
+        </div>      
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-4">
+                <div class="nav-link formen" aria-current="page" href="#"><h4>For men</h4></div>
+              </li>
+              <li class="nav-item mx-4">
+                <div class="nav-link forgirl" href="#"><h4>For girl</h4></div>
+              </li>              
+            </ul>            
+          </div>
+        </div>
+      </nav>
     <div class="container container-1 mt-5">
         <div class="row hang-final">
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 mt-4">
@@ -234,16 +271,20 @@
             </div>
             <div class="row mothang">
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 mt-4">
-                    <img src="https://tse1.mm.bing.net/th?id=OIP.ISzrZdXAgh-NHNgL9cBvUgHaJ3&pid=Api&P=0&w=300&h=300" alt="">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.ISzrZdXAgh-NHNgL9cBvUgHaJ3&pid=Api&P=0&w=300&h=300"
+                        alt="">
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 mt-4">
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.bqC_MjYi-JO0IWMDwNHZ1gHaJ4&pid=Api&P=0&w=300&h=300" alt="">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.bqC_MjYi-JO0IWMDwNHZ1gHaJ4&pid=Api&P=0&w=300&h=300"
+                        alt="">
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 mt-4">
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.hJ4srbAm0tDaO1vqphRitQHaK0&pid=Api&P=0&w=300&h=300" alt="">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.hJ4srbAm0tDaO1vqphRitQHaK0&pid=Api&P=0&w=300&h=300"
+                        alt="">
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 mt-4">
-                    <img src="https://tse3.mm.bing.net/th?id=OIP.0oeTJ6onFIk6WoM5iBy7uAHaJQ&pid=Api&P=0&w=300&h=300" alt="">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.0oeTJ6onFIk6WoM5iBy7uAHaJQ&pid=Api&P=0&w=300&h=300"
+                        alt="">
                 </div>
             </div>
         </div>
@@ -258,7 +299,9 @@
         </div>
     </div>
     <div class="container container-2 display-none mt-5 pt-5">
-        <div><h1>Xin lỗi! Ở đây chỉ dành cho con trai thôi =))</h1></div>
+        <div>
+            <h1>Xin lỗi! Ở đây chỉ dành cho con trai thôi =))</h1>
+        </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -296,17 +339,17 @@
                     alert('hết rồi ba, mê gái vc =)))');
                 }
             })
-            $('.forgirl').click(function() {
-                $('.container-1').addClass('display-none');                    
-                $('.container-2').removeClass('display-none');                    
+            $('.forgirl').click(function () {
+                $('.container-1').addClass('display-none');
+                $('.container-2').removeClass('display-none');
             })
-            $('.formen').click(function() {
+            $('.formen').click(function () {
                 $('.container-1').removeClass('display-none');
                 $('.container-2').addClass('display-none');
             })
-            $('.btn-darkmode').click(function() {
+            $('.btn-darkmode').click(function () {
                 $('body').toggleClass('bg-dark');
-                $('.sang, .toi').toggleClass('display-none');                
+                $('.sang, .toi').toggleClass('display-none');
                 $('body').toggleClass('chutrang');
             })
         })
